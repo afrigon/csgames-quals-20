@@ -1,0 +1,6 @@
+core
+.gdb_history
+*.id*
+*.nam
+*.til
+

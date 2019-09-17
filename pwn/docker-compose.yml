@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+    are_u_ready:
+        build:
+            context: ./are_u_ready
+        container_name: pwn-are_u_ready
+        ports:
+            - 8000:8000
+
+    are_u_sure:
+        build:
+            context: ./are_u_sure
+        container_name: pwn-are_u_sure
+        ports:
+            - 8001:8001
+
+    are_u_done:
+        build:
+            context: ./are_u_done
+        container_name: pwn-are_u_done
+        ports:
+            - 8002:8002
+
