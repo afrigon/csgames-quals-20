@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+    sorting:
+        build:
+            context: ./sorting
+        container_name: coding-sorting
+        ports:
+            - 8100:8100
+              
+    palindrome:
+        build:
+            context: ./palindrome
+        container_name: coding-palindrome
+        ports:
+            - 8101:8101
+
+    ascii:
+        build:
+            context: ./ascii
+        container_name: coding-ascii
+        ports:
+            - 8102:8102
+

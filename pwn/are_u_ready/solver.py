@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 from pwn import *
 
-host = "localhost"
+host = "67.205.174.218"
 port = 8000
 binary_path = "./are_u_ready"
 lib_path = None

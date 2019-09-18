@@ -1,10 +1,3 @@
-FROM ubuntu:18.04 AS builder
-RUN apt-get update && apt-get install -y build-essential make
-WORKDIR /tmp
-COPY Makefile .
-COPY ./*.c ./
-RUN make
-
 FROM ubuntu:18.04
 MAINTAINER xehos <xehos@frigon.app>
 
@@ -13,7 +6,7 @@ RUN apt-get update && apt-get install -y socat
 RUN useradd -ms /bin/sh challenge
 WORKDIR /home/challenge
 
-COPY --from=builder /tmp/are_u_done .
+COPY ./are_u_done .
 COPY ./flag .
 
 RUN chown -R root:challenge /home/challenge && \
