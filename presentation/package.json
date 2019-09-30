@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "remarker build && cp static build",
+    "build": "remarker build && cp -R static build",
     "clean": "rm -rf build"
   },
   "repository": {
