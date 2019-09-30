@@ -57,13 +57,15 @@ name: description
 
 count: false
 
-- bla bla cool compe
+- Compétitions inter-universitaires d'informatique
+- Buzzword: AI, devops, hacking, software ingineering, etc.
+- Shitload of fun!!!
 
 --
 
 count: false
 
-- 3 compé chanque
+- 3 compétition par personne (Ça laisse du temps pour les party et les puzzles)
 
 --
 
@@ -93,7 +95,7 @@ count: false
 
 count: false
 
-- dates
+- 13 au 16 mars 2020
 
 ---
 
