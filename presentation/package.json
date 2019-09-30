@@ -1,0 +1,22 @@
+{
+  "name": "csgames-presentation",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "remarker build && cp static build",
+    "clean": "rm -rf build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afrigon/csgames-quals-20.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afrigon/csgames-quals-20/issues"
+  },
+  "homepage": "https://github.com/afrigon/csgames-quals-20#readme",
+  "dependencies": {
+    "remarker": "^1.10.0"
+  }
+}
