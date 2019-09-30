@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+    vmware:
+        build:
+            context: ./vmware
+        container_name: rev-vmware
+        ports:
+            - 8200:8200
+

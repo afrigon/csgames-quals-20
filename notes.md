@@ -49,7 +49,7 @@
 
 - prendre les infos du monde qui était là
 - annoncer les qualifs
-- montrer les photos des last year
+- montrer les photos de last year
 - montrer le flashout de last year
 
 ## Qualifications

