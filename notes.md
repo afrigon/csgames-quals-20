@@ -11,7 +11,7 @@
     yes, tuque ? socks?
 
 - whats the current budget
-    voted dans l'AG de l'asetin dans 2 semainesa (check budget de last year) 25 septembre
+    voted dans l'AG de l'asetin dans 2 semainesa (check budget de last year) 25 septembre 4500$
     
 - talk about the CFI patch for the foulard
     would be very nice?
