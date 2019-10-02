@@ -2,155 +2,158 @@ layout: true
 name: style
 
 <style>
-    @font-face {
-        font-family: geomanist;
-        src: url(/static/fonts/geomanist-book.woff2);
-        font-weight: normal;
-    }
-    @font-face {
-        font-family: geomanist;
-        src: url(/static/fonts/geomanist-bold.woff2);
-        font-weight: bold;
-    }
-
     .remark-slide-content * {
-        font-family: geomanist, Roboto, Helvetica, arial, serif;
+        color: #202020;
     }
 
-    .image-parrain img {
+    .parrain-image {
+        height: 300px;
         width: 300px;
+        object-fit: cover;
+        margin: 0 30px;
     }
 
-    .logo-cfi img {
-        height: 200px;
+    .inline {
+        display: inline-block;
     }
 
-    .no-border {
-        border: none;
+    .last-year img {
+        max-width: 100%;
+        height: 400px;
     }
 
+    .left li {
+        text-align: left;
+    }
+
+    .link a {
+        font-size: 64px;
+        text-decoration: none;
+    }
 </style>
+
+---
+
+layout: true
+name: none
 
 ---
 
 template: style
 name: start
+class: center
 
-![Logo CSGames](/static/images/logo-csgames.png)
+<div style="vertical-align: middle;">
+    <img style="margin-top: 29px; vertical-align: top;" src="/static/images/logo-csgames.png" />
+    <img style="width: 100px; margin-left: 30px;" src="/static/images/logo-cfi.png" />
+</div>
 
+<img style="height: 350px;" src="/static/images/pizza.jpg" />
 
-.logo-cfi[![Logo CFI](/static/images/logo-cfi.png)]
+<br />
 
-Alexandre Frigon
-
-Christopher Guay
+Alexandre Frigon - Christopher Guay
 
 ---
 
-template: style
 class: left
 name: description
 
-## What
-
---
-
-count: false
+## What 🏆
 
 - Compétitions inter-universitaires d'informatique
-- Buzzword: AI, devops, hacking, software ingineering, etc.
-- Shitload of fun!!!
+- 3 compétitions par personne + puzzle hero
+- Party pour toute la famille
 
 --
 
 count: false
 
-- 3 compétition par personne (Ça laisse du temps pour les party et les puzzles)
+## Where ⛰
+
+- École de technologie supérieure (ÉTS) - Montréal
 
 --
 
 count: false
 
-- party pour toute la famille
-
---
-
-count: false
-
-## Where
-
---
-
-count: false
-
-- ETS Montréal
-
---
-
-count: false
-
-## When
-
---
-
-count: false
+## When 📅
 
 - 13 au 16 mars 2020
 
 ---
 
-template: style
-class: center
-name: last-year
-
-# Last Year
-
-![last-year](/static/images/22BB2473-E20B-436C-91E8-724912C122CD.JPG)
-![last-year](/static/images/3C7B5163-F819-41A1-B3B8-1C45CC2BCF5B.JPG)
-![last-year](/static/images/775829EA-B337-46D1-BF4F-114BE85A4001.JPG)
-![last-year](/static/images/BFE8DA65-32DF-4A28-8537-D8639C0D8598.JPG)
-
----
-
-template: style
-class: left
-name: qualif
-
-# Qualifications
-
-faut choisir 20 personnes
-
-something something
-
-dates and stuff
-
----
-
-template: style
 class: left
 name: godfathers
 
 # Parrains
 
---
-
-count: false
-
-.image-parrain[![parrain-seb](/static/images/20722319-CB67-497F-AE74-6D06851CE15A.JPG)]
-
-Sébastien Dufour-Beauséjour
-
---
-
-count: false
-
-.image-parrain[![parrain-je]()]
-
-Jérémie Bolduc
+<div class="center">
+    <div class="inline">
+        <img class="parrain-image" src="/static/images/20722319-CB67-497F-AE74-6D06851CE15A.JPG" />
+        <p>Sébastien Dufour-Beauséjour</p>
+    </div>
+    <div class="inline">
+        <img class="parrain-image" src="/static/images/je.png" />
+        <p>Jérémie Bolduc</p>
+    </div>
+</div>
 
 ---
 
-template: style
+layout: true
+class: center
+name: last-year
+
+# Last Year
+
+---
+
+template: last-year
+class: left
+
+<div>
+    <ul class="inline">
+        <li>Compiler</li>
+        <li>Team Software Engineering</li>
+        <li>Relay Programming</li>
+        <li>DevOps</li>
+        <li>Xtreme Theory</li>
+        <li>Security - CSE</li>
+        <li>Mobile Development - Mirego</li>
+        <li>Puzzle Hero</li>
+    </ul>
+
+    <ul class="inline" style="margin-left: 20px;">
+        <li>Reverse Engineering</li>
+        <li>Hardware Hacking</li>
+        <li>Functionnal Programming</li>
+        <li>Artificial Intelligence</li>
+        <li>Sport</li>
+        <li>Application Security - National Bank</li>
+        <li>Web - PSC</li>
+        <li>Participation</li>
+    </ul>
+</div>
+
+---
+
+template: last-year
+.last-year[![last-year](/static/images/22BB2473-E20B-436C-91E8-724912C122CD.JPG)]
+
+---
+
+template: last-year
+.last-year[![last-year](/static/images/3C7B5163-F819-41A1-B3B8-1C45CC2BCF5B.JPG)]
+
+---
+
+template: last-year
+.last-year[![last-year](/static/images/BFE8DA65-32DF-4A28-8537-D8639C0D8598.JPG)]
+
+---
+
+template: none
 class: center
 name: flashout
 
@@ -158,7 +161,7 @@ name: flashout
 
 <div>
     <iframe
-        class="no-border" 
+        style="border: none;"
         width="720" 
         height="405" 
         allowfullscreen="allowfullscreen"
@@ -172,11 +175,40 @@ name: flashout
 
 ---
 
-template: style
+template: none
+class: left
+name: qualif
+
+# Qualifications
+
+- Combat à mort pour choisir nos **deux équipes de 10 personnes** chacunes
+- Seulement les étudiants **non-gradués** seront considérés
+- Divers défis à compléter sur une période de 8h
+- Around la semaine de relâche
+- Les premières années sont encouragés à participer!
+
+--
+
+# Pratique
+
+- Au moins une journée pour pratiquer / filmer le flashout
+- Les participant auront la tâche d'organiser un atelier sur le sujet d'une de leurs compétitions
+
+---
+
+template: none
 class: center
 name: attending
 
 # Présence
 
+<br />
+<br />
 
+.link[[https://bit.ly/ul-csgames](https://bit.ly/ul-csgames)]
+
+<br />
+<br />
+
+Allez remplir le form avant de partir gang de jeune punk
 
