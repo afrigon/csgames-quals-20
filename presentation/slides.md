@@ -189,10 +189,12 @@ name: qualif
 
 --
 
+count: false
+
 # Pratique
 
 - Au moins une journée pour pratiquer / filmer le flashout
-- Les participant auront la tâche d'organiser un atelier sur le sujet d'une de leurs compétitions
+- Les participants auront la tâche d'organiser un atelier sur le sujet d'une de leurs compétitions
 
 ---
 
