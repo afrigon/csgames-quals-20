@@ -127,7 +127,7 @@ class: left
     <ul class="inline" style="margin-left: 20px;">
         <li>Reverse Engineering</li>
         <li>Hardware Hacking</li>
-        <li>Functionnal Programming</li>
+        <li>Functional Programming</li>
         <li>Artificial Intelligence</li>
         <li>Sport</li>
         <li>Application Security - National Bank</li>
