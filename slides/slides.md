@@ -30,6 +30,18 @@ name: style
         font-size: 64px;
         text-decoration: none;
     }
+
+    .logo {
+        height: 80px;
+        width: 80px;
+        margin: 0 30px;
+        text-algin: left;
+    }
+
+    .legend span {
+      margin-bottom=50px;
+    }
+
 </style>
 
 ---
@@ -200,7 +212,22 @@ count: false
 
 template: none
 class: center
+name: Join us
+
+# Join us
+
+  .last-year[![cfi-team](/static/images/cfi-team.jpg)]
+  <br/>
+  <br/>
+  .logo[![cfi-logo](/static/images/logo-cfi.png)]
+  <span class="inline"> This could be you! </span>
+
+---
+
+template: none
+class: center
 name: attending
+
 
 # Présence
 
