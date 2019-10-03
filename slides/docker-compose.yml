@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+    presentations:
+        build:
+            context: .
+        container_name: website-presentation
+        ports:
+            - 8080:80
+
