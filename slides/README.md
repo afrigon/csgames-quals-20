@@ -15,3 +15,9 @@ just serve the static content in the build folder.
 cd build
 python3 -m http.server
 ```
+
+## Docker
+
+```sh
+docker-compose up
+```
