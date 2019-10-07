@@ -184,8 +184,8 @@ name: qualif
 - Combat à mort pour choisir nos **deux équipes de 10 personnes** chacunes
 - Seulement les étudiants **non-gradués** seront considérés
 - Divers défis à compléter sur une période de 8h
-- Around la semaine de relâche
 - Les premières années sont encouragés à participer!
+- Date à confirmer, pendant la semaine de lecture
 
 --
 
@@ -193,8 +193,8 @@ count: false
 
 # Pratique
 
-- Au moins une journée pour pratiquer / filmer le flashout
-- Les participants auront la tâche d'organiser un atelier sur le sujet d'une de leurs compétitions
+- Au moins trois sessions de 4h de pratique pour faire les compétitions de l'an dernier. (une session par compétitions)
+- Une journée pour se préparer et filmer le flashout
 
 ---
 

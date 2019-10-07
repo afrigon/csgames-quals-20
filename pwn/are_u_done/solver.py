@@ -4,7 +4,6 @@ from pwn import *
 host = "csgames-quals.frigon.app"
 port = 8002
 binary_path = "./are_u_done"
-lib_path = None
 
 context.update(arch="amd64", os="linux")
 
@@ -12,13 +11,7 @@ def get_process():
     if args["REMOTE"]:
         return remote(host, port)
     else:
-        if lib_path is None:
-            return process(binary_path)
-        else:
-            return process([binary_path], env={"LD_PRELOAD": lib_path})
-
-if lib_path is not None:
-    lib = ELF(lib_path)
+        return process(binary_path)
 
 payload = ""
 p = get_process()
