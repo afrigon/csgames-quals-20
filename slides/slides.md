@@ -185,7 +185,7 @@ name: qualif
 - Seulement les étudiants **non-gradués** seront considérés
 - Divers défis à compléter sur une période de 8h
 - Les premières années sont encouragés à participer!
-- Lundi le **4 novembre** durant la semaine de lecture (9am - 5pm)
+- Lundi le **28 octobre** durant la semaine de lecture (9am - 5pm)
 
 --
 
