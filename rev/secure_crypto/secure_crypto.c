@@ -1,14 +1,22 @@
-int decrypt(char* c) {
-    int len = strlen(c);
-    char m[len];
 
-    for (int i = 0; i < len; ++i) {
-        m = (c[i] - 0x40 + 13) % 26 + 0x40;
-    }
+
+int validate(char* password) {
+    
+}
+
+int flag() {
+    char flag[100];
+
+    int fd = open("./flag");
+    read(fd, flag, 90);
+    close(fd);
+
+    printf("%s", flag);
+    return 0;
 }
 
 void usage() {
-    printf("Usage: ./secure_crypto FLAG-XXXXXXXXXXXX; echo $?\n");
+    printf("Usage: ./secure_crypto key\n");
 }
 
 int main(int argc, char* argv[]) {
@@ -21,9 +29,11 @@ int main(int argc, char* argv[]) {
 
     char key[24];
     read(0, key, 24);
-
     
+    if (validate(password)) {
+        return flag();
+    }
 
-    RETURN EXIT_SUCCESS;
+    return EXIT_FAILURE;
 }
 
