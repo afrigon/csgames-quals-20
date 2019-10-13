@@ -57,7 +57,7 @@ main = hspec $ do
         reduce' (*) 1 (fromStdList l) == foldl (*) 1 (l :: [Int])
 
   describe "CSList.zip'" $ do
-    it "behaves like standard zip on any integer list and predicate" $ do
+    it "behaves like standard zip on any two integer list" $ do
       property $ \xs ys ->
-        (zip' `on` fromStdList) xs ys == fromStdList (zip xs (ys :: [Int]))
+        (zip' `on` fromStdList) xs ys == fromStdList (zip (xs :: [Int]) (ys :: [Int]))
 
