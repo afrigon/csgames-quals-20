@@ -16,7 +16,7 @@ fromStdList (h:t) = Cons h (fromStdList t)
 head' :: List a -> Maybe a
 head' = undefined
 
-tail' :: List a -> List a
+tail' :: List a -> Maybe (List a)
 tail' = undefined
 
 length' :: List a -> Int
