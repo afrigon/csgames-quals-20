@@ -7,4 +7,10 @@ services:
         container_name: rev-vmware
         ports:
             - 8200:8200
+    secure_crypto:
+        build:
+            context: ./secure_crypto
+        container_name: rev-secure-crypto
+        ports:
+            - 8201:8201
 
