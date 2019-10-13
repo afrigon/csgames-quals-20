@@ -11,15 +11,11 @@ main :: IO ()
 main = hspec $ do
   describe "CSList.head'" $ do
     it "behaves like standard head on any integer list" $ do
-      property $ \l ->
-        if null l
-        then head' (fromStdList l) == Nothing
-        else head' (fromStdList l) == Just (head l :: Int)
+      property $ \l -> (== (head l :: Int)) <$> head' (fromStdList l)
 
   describe "CSList.tail'" $ do
     it "behaves like standard tail on any integer list" $ do
-      property $ \l ->
-        tail' (fromStdList l) == fromStdList (tail (l :: [Int]))
+      property $ \l -> (== fromStdList (tail (l :: [Int]))) <$> tail' (fromStdList l)
 
   describe "CSList.length'" $ do
     it "behaves like standard length on any integer list" $ do
