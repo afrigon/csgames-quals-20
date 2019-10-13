@@ -56,7 +56,7 @@ reduce' f acc Nil = acc
 reduce' f acc (Cons h t) = reduce' f (f acc h) t
 
 zip' :: List a -> List b -> List (a, b)
-zip' Nil l = l 
-zip' l Nil = l 
+zip' Nil l = Nil
+zip' l Nil = Nil
 zip' (Cons x xs) (Cons y ys) = Cons (x, y) $ zip' xs ys 
 
