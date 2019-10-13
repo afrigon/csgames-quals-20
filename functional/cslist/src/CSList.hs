@@ -39,3 +39,7 @@ filter' = undefined
 
 reduce' :: (b -> a -> b) -> b -> List a -> b
 reduce' = undefined
+
+zip' :: List a -> List b -> List (a, b)
+zip' = undefined
+

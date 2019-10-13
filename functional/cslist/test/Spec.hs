@@ -55,3 +55,9 @@ main = hspec $ do
     it "behaves like standard foldl (*) 1 on any integer list (product)" $ do
       property $ \l ->
         reduce' (*) 1 (fromStdList l) == foldl (*) 1 (l :: [Int])
+
+  describe "CSList.zip'" $ do
+    it "behaves like standard zip on any integer list and predicate" $ do
+      property $ \xs ys ->
+        (zip' `on` fromStdList) xs ys == fromStdList (zip xs (ys :: [Int]))
+
