@@ -1,0 +1,26 @@
+\title{CSGames Qualifications 2020}
+\author{Alexandre Frigon}
+\date{\today}
+
+\documentclass[12pt]{article}
+
+\newcounter{i}
+
+\begin{document}
+
+\newcommand{\question}[1]{
+    \stepcounter{i}
+    \section*{Question \arabic{i}}
+    #1
+}
+
+\question {
+    Prove that $L = \{ xx : x \in \sum^\star \}$ is an irregular language.
+}
+
+\question {
+    Solve $P = NP$
+}
+
+\end{document}
+
