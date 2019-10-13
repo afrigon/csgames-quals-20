@@ -35,7 +35,12 @@ Content-Type: application/json
 
 #### Rank dog
 
+##### Good Boi
+
 `PATCH /doggo/:id/good 204 no-content`
+
+##### Bad Boi
+
 `PATCH /doggo/:id/bad 204 no-content`
 
 #### Get Dogs Ranking
