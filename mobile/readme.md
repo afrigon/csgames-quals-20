@@ -12,6 +12,10 @@ Good boi or not is the newest and hotest app of the moment. You absolutely need 
 - Light and Dark mode
 - Language support
 
+### Format
+
+Please provide your entire project with everything required to compile it. Include screenshots to showcase your progress and show off your favorite doggos.
+
 ### API Specification
 
 #### List Dogs

@@ -1,0 +1,11 @@
+Vagrant.configure("2") do |config|
+    config.vm.box = "jouramie/CS20-qualif-OS"
+    config.vm.box_version = "1.1"
+  
+    config.vm.network "forwarded_port", guest: 4321, host: 4321, host_ip: "127.0.0.1"
+    config.vm.post_up_message = "Toutes les informations concernant l'épreuve se trouvent dans la vm, à '/home/vagrant' ton premier défi (le plus facile) sera d'y accéder!
+    
+Hint: Le dossier courant est automagiquement synchronizé avec '/vagrant' dans la vm, sers-t'en! La vm viens aussi avec gcc, g++ et cmake.
+À remettre, votre code source et les instructions pour le compiler (un cmake svp). Pour la correction, nous utiliserons le compilateur de la vm.
+Also, si t'as pas fini après 2h, peut-être que l'OS c'est pas fait pour toi... 🙃"
+end
