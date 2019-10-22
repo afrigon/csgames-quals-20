@@ -5,12 +5,14 @@ services:
         build:
             context: ./vmware
         container_name: rev-vmware
+        restart: always
         ports:
             - 8200:8200
     secure_crypto:
         build:
             context: ./secure_crypto
         container_name: rev-secure-crypto
+        restart: always
         ports:
             - 8201:8201
 

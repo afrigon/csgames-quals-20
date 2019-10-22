@@ -5,6 +5,7 @@ services:
         build:
             context: ./are_u_ready
         container_name: pwn-are_u_ready
+        restart: always
         ports:
             - 8000:8000
 
@@ -12,6 +13,7 @@ services:
         build:
             context: ./are_u_sure
         container_name: pwn-are_u_sure
+        restart: always
         ports:
             - 8001:8001
 
@@ -19,6 +21,7 @@ services:
         build:
             context: ./are_u_done
         container_name: pwn-are_u_done
+        restart: always
         ports:
             - 8002:8002
 
