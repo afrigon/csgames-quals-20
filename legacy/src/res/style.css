@@ -1,0 +1,253 @@
+.button
+{
+	-fx-background-color: transparent;
+	-fx-background-radius: 1.0px;
+	-fx-font-size: 20.0px;
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+	-fx-border-color: white;
+	-fx-text-fill: linear-gradient(from 35.0% 25.0% to 50.0% 100.0%, #24824E 0.0%, #FF9D5C 60.0%, #DDD15C 100.0%);
+	-fx-pref-height: 46;
+	
+}
+
+.victoire-root
+{
+	-fx-background-image: url("trophee.png");
+	-fx-background-size: stretch;
+}
+
+.victoire-label
+{
+	-fx-font-size: 25.0px;
+	-fx-font-weight: bold;
+	-fx-font-family: "Courier New";
+	-fx-text-fill: linear-gradient(from 35.0% 25.0% to 50.0% 100.0%, #24824E 0.0%, #FF9D5C 60.0%, #DDD15C 100.0%);
+}
+
+.credits-label
+{
+	-fx-font-size: 35.0px;
+	-fx-font-weight: bold;
+	-fx-text-fill: linear-gradient(from 35.0% 25.0% to 50.0% 100.0%, #24824E 0.0%, #FF9D5C 60.0%, #DDD15C 100.0%);
+}
+
+.credits-root
+{
+	-fx-background-color: black;
+}
+
+.credit-pane
+{
+	-fx-background-image: url("espace.png");
+	-fx-border-color: white;
+}
+
+.button:hover
+{
+	-fx-background-color: gray;
+	-fx-text-fill: #010010FF;
+}
+
+.choice-box
+{
+	-fx-font-size: 10.0px;
+	-fx-font-weight: bold;
+}
+
+.text-field
+{
+	-fx-font-size: 20.0px;
+	-fx-font-weight: bold;
+	-fx-text-fill: linear-gradient(from 35.0% 25.0% to 50.0% 100.0%, #24824E 0.0%, #FF9D5C 60.0%, #DDD15C 100.0%);
+	-fx-border-color: white;
+	-fx-border-radius: 0.0;
+	-fx-background-color: #010010FF;
+}
+
+.editeur-root
+{
+	-fx-background-color: #010010FF;
+}
+
+.editeur-menu-droite
+{
+	-fx-spacing: 2.0;
+	-fx-alignment: top-center;
+}
+
+.editeur-menu-bas
+{
+	-fx-spacing: 10.0;
+	-fx-alignment: center;
+}
+
+.editeur-jeu
+{
+	-fx-border-color: white;
+	-fx-border-width: 1px;
+	-fx-border-radius: 0.0;
+}
+
+.editeur-label
+{
+	-fx-font-size: 20.0px;
+	-fx-font-weight: bold;
+	-fx-text-fill: linear-gradient(from 35.0% 25.0% to 50.0% 100.0%, #24824E 0.0%, #FF9D5C 60.0%, #DDD15C 100.0%);
+}
+
+.niveau-label-description
+{
+	-fx-background-image: url("ecran.png");
+	-fx-background-size: stretch;
+	-fx-font-family: "OCR A Extended";
+	-fx-font-size: 24.0px;
+}
+
+.niveau-vbox
+{
+	-fx-spacing: 10.0;
+	-fx-alignment: center;
+}
+
+.niveau-hbox
+{
+	-fx-spacing: 35.0;
+	-fx-alignment: center;
+}
+
+.niveau-button-niveau
+{
+	-fx-pref-width: 55.0;
+}
+
+.niveau-root
+{
+	-fx-background-image: url("niveau.png");
+	-fx-background-size: stretch;
+}
+
+.menu-root
+{
+	-fx-background-image: url("planete.gif");
+}
+
+.jeu-root
+{
+	-fx-background-image: url("espace.png");
+}
+
+.jeu-pause
+{
+	-fx-background-color: #000000aa;
+}
+
+.jeu-progress
+{
+	-fx-spacing: 5.0;
+	-fx-background-color: #010010FF;
+	-fx-border-color: white;
+}
+
+.jeu-progress-carburant .bar
+{
+	-fx-background-color: #FFFF00FF;
+}
+
+.jeu-progress-solidite .bar
+{
+	-fx-background-color: #FF0000FF;
+}
+
+.progress-bar .bar
+{
+	-fx-background-inserts: 0.0;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 0.0;
+}
+
+.progress-bar .track 
+{
+	visibility: hidden;
+	-fx-background-color: #00000000;
+	-fx-text-box-border: #00000000;
+    -fx-control-inner-background: #00000000;
+}
+
+.combo-box .list-cell 
+{
+	-fx-background-color: #010010FF;
+	-fx-background-radius: 1.0px;
+	-fx-font-size: 20.0px;
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+	-fx-text-fill: linear-gradient(from 35.0% 25.0% to 50.0% 100.0%, #24824E 0.0%, #FF9D5C 60.0%, #DDD15C 100.0%);
+	-fx-alignment: center;
+	-fx-pref-height: 46;
+}
+
+.combo-box-popup .list-view 
+{
+-fx-background-color: #010010FF;
+-fx-border-color: white;
+}
+
+.combo-box-popup .list-view .list-cell 
+{
+	-fx-background-radius: 0;
+	-fx-background-color: #010010FF;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover 
+{
+	-fx-background-color: gray;
+	-fx-text-fill: #010010FF;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover 
+{
+	-fx-background-color: gray;
+	-fx-text-fill: #010010FF;
+}
+
+.combo-box-base  
+{	
+-fx-background-color: #010010FF;
+-fx-background-radius: 0.0;
+-fx-border-color: white;
+-fx-padding: 0.0;
+-fx-pref-height: 46;
+}
+
+.combo-box-base:hover
+{	
+	-fx-background-color: gray;
+	-fx-text-fill: #010010FF;
+}
+
+.color-picker .label
+{
+	-fx-background-color: #010010FF;
+	-fx-background-radius: 1.0px;
+	-fx-font-size: 20.0px;
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+	-fx-text-fill: linear-gradient(from 35.0% 25.0% to 50.0% 100.0%, #24824E 0.0%, #FF9D5C 60.0%, #DDD15C 100.0%);
+	-fx-alignment: center;
+	-fx-pref-height: 46;
+}
+
+.color-palette{
+	-fx-background-color: #010010FF;
+	-fx-background-radius: 1.0px;
+	-fx-border-color: white;
+}
+
+.color-palette-region > .color-square.hover-square {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: white;
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+}

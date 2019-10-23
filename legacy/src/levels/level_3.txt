@@ -1,0 +1,17 @@
+VaisseauJoueur ; 1.0 ; 3000.0 ; 3.0 ; 3.0
+Planete ; 6.0E15 ; 89.0 ; -144.0 ; 100.0 ; VERTE ; 30.0 ; 0x6680e6ff
+Planete ; 9.0E15 ; -12.227612258060162 ; -815.1741505373304 ; 120.0 ; JAUNE ; 30.0 ; 0xffa500ff
+Planete ; 9.0E15 ; -631.7599666664314 ; -1210.5336135479356 ; 105.0 ; ROUGE ; 30.0 ; 0xe6ccffff
+Planete ; 6.0E15 ; 761.21955493114 ; -588.8679575882404 ; 140.0 ; MAGENTA ; 30.0 ; 0xb3b34dff
+Planete ; 6.0E15 ; -2392.1750250387613 ; -426.8167152104297 ; 180.0 ; BLEUE ; 30.0 ; 0x808080ff
+Planete ; 6.0E15 ; -2574.101711122933 ; 602.5053244763317 ; 195.0 ; ORANGE ; 30.0 ; 0xffb399ff
+Planete ; 6.0E15 ; 3123.0760899340266 ; -1647.6405297226356 ; 195.0 ; VERTE ; 80.0 ; 0x4d3399ff
+Planete ; 6.0E15 ; 3065.6255574863935 ; 281.73985164371334 ; 250.0 ; BLEUE ; 30.0 ; 0xffffffff
+Vaisseau ; 6.0E15 ; 1916.6149085337302 ; -2250.8711204227848 ; 0.0 ; 0.0
+Vaisseau ; 6.0E15 ; 1696.387867484469 ; -1729.0287840234498 ; 0.0 ; 0.0
+Vaisseau ; 6.0E15 ; -2851.779284619828 ; -1915.743014478258 ; 0.0 ; 0.0
+DescriptionNiveau ; Enfin un long voyage ! Assurez-vous de ne pas manquer de carburant durant votre long périple vers le portail !
+ObjectifRayon ; -161.17934832233823 ; -2088.0946118211573 ; 50.0
+PointDepart ; -500.0 ; 500.0
+TitreNiveau ; L'excursion
+VitesseDepart ; 100.0

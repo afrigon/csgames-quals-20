@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="507.0" styleClass="menu-root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <center>
+    <VBox alignment="CENTER" prefHeight="218.0" prefWidth="450.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="246.0" prefWidth="507.0">
+               <children>
+                  <Button fx:id="quitter" layoutX="388.0" layoutY="187.0" mnemonicParsing="false" onAction="#quitter" prefHeight="46.0" prefWidth="100.0" text="Quitter">
+                     <textFill>
+                        <LinearGradient endX="0.5" endY="1.0" startX="0.18571428571428572" startY="0.3476190476190476">
+                           <stops>
+                              <Stop color="#24824e" />
+                              <Stop color="#ff9d5c" offset="0.4914089347079038" />
+                              <Stop color="#ddd15c" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+                  <Button fx:id="jouer" layoutX="27.0" layoutY="110.0" mnemonicParsing="false" onAction="#jouer" prefHeight="46.0" prefWidth="100.0" text="Jouer">
+                     <textFill>
+                        <LinearGradient endX="0.5" endY="1.0" startX="0.18571428571428572" startY="0.3476190476190476">
+                           <stops>
+                              <Stop color="#24824e" />
+                              <Stop color="#ff9d5c" offset="0.4914089347079038" />
+                              <Stop color="#ddd15c" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+                  <ImageView fitHeight="48.0" fitWidth="234.0" layoutX="137.0" layoutY="108.0">
+                     <image>
+                        <Image url="@asteria.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="editor" layoutX="387.0" layoutY="109.0" mnemonicParsing="false" onAction="#niveau" prefHeight="46.0" prefWidth="100.0" text="Éditeur">
+                     <textFill>
+                        <LinearGradient endX="0.5" endY="1.0" startX="0.18571428571428572" startY="0.3476190476190476">
+                           <stops>
+                              <Stop color="#24824e" />
+                              <Stop color="#ff9d5c" offset="0.4914089347079038" />
+                              <Stop color="#ddd15c" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button layoutX="28.0" layoutY="187.0" mnemonicParsing="false" onAction="#credits" prefHeight="46.0" prefWidth="100.0" text="Crédits">
+                     <textFill>
+                        <LinearGradient endX="0.5" endY="1.0" startX="0.18571428571428572" startY="0.3476190476190476">
+                           <stops>
+                              <Stop color="#24824e" />
+                              <Stop color="#ff9d5c" offset="0.4914089347079038" />
+                              <Stop color="#ddd15c" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+    </VBox>
+  </center>
+</BorderPane>

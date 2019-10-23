@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane styleClass="credits-root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane fx:id="pane" focusTraversable="true" onKeyPressed="#keyPressed" prefHeight="200.0" prefWidth="200.0" styleClass="credit-pane" stylesheets="@style.css" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <Label styleClass="credits-label" text="Crédits" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#24824e" />
+                  <Stop color="#ff9d5c" offset="0.5017182130584192" />
+                  <Stop color="#ddd15c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+   </top>
+</BorderPane>

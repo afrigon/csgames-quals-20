@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+    web:
+        build: ./src/
+        depends_on:
+            - db
+        environment:
+            PORT: "5000"
+        ports:
+            - 5000:5000
+
+    db:
+        build: ./mysql/
+        environment:
+            MYSQL_DATABASE: "vapor"
+            MYSQL_USER: "vapor"
+            MYSQL_PASSWORD: "vapor"
+            MYSQL_ROOT_PASSWORD: "vapor"
+

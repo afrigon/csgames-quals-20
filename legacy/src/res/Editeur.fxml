@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.collections.FXCollections ?>
+
+<BorderPane maxHeight="900.0" maxWidth="1440.0" styleClass="editeur-root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<bottom>
+		<HBox alignment="CENTER" prefHeight="112.0" styleClass="editeur-menu-bas" BorderPane.alignment="CENTER">
+			<children>
+				<Button fx:id="retour" mnemonicParsing="false" onAction="#retour" text="Retour">
+					<HBox.margin>
+						<Insets />
+					</HBox.margin>
+				</Button>
+            <Button fx:id="essayer" layoutX="837.0" layoutY="43.0" mnemonicParsing="false" onAction="#onEssayer" text="Essayer" textFill="RED" />
+				<Button fx:id="sauve" mnemonicParsing="false" onAction="#sauve" text="Sauvegarder" />
+				<Button fx:id="buttonCharger" mnemonicParsing="false" onAction="#charge" text="Charger" />
+				<Button fx:id="erase" mnemonicParsing="false" onAction="#erase" text="Effacer" textFill="RED" />
+				<ComboBox fx:id="comboBoxCorps" />
+			</children>
+		</HBox>
+	</bottom>
+	<right>
+				<VBox fx:id="vBoxMenu" alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0" styleClass="editeur-menu-droite">
+					<children>
+						<Label styleClass="editeur-label" text="Position X">
+							<VBox.margin>
+								<Insets />
+							</VBox.margin>
+						</Label>
+						<TextField fx:id="textFieldPositionX" onAction="#onPositionX" prefHeight="25.0" prefWidth="119.0" />
+						<Label styleClass="editeur-label" text="Position Y" />
+						<TextField fx:id="textFieldPositionY" onAction="#onPositionY" prefHeight="25.0" prefWidth="119.0" />
+						<Pane>
+							<children>
+      								<VBox fx:id="vBoxMenuCorps" prefWidth="200.0" styleClass="editeur-menu-droite">
+      									<children>
+      										<Label styleClass="editeur-label" text="Masse" />
+      										<TextField fx:id="textFieldMasse" onAction="#onMasse" prefHeight="25.0" prefWidth="119.0" />
+      										<Pane prefWidth="200.0">
+      											<children>
+      												<VBox fx:id="vBoxMenuPlanete" prefWidth="200.0" styleClass="editeur-menu-droite" visible="false">
+      													<children>
+      														<Label styleClass="editeur-label" text="Texture">
+      															<VBox.margin>
+      																<Insets />
+      															</VBox.margin>
+      														</Label>
+      														<ComboBox fx:id="comboBoxTexture" onAction="#onTexture" prefHeight="46.0" prefWidth="200.0" />
+      														<Label styleClass="editeur-label" text="Rayon" />
+      														<TextField fx:id="textFieldRayon" onAction="#onRayon" prefHeight="25.0" prefWidth="50.0" />
+                                    <Label styleClass="editeur-label" text="Rayon Atmosphere" />
+                                    <TextField fx:id="textFieldRayonAtmosphere" onAction="#onRayonAtmosphere" prefHeight="25.0" prefWidth="119.0" />
+                                    <Label styleClass="editeur-label" text="Couleur Atmosphere" />
+                                    <ColorPicker fx:id="colorPickerCouleurAtmosphere" onAction="#onCouleurAtmosphere" prefWidth="200.0" />
+                  										<Button fx:id="supprimer" mnemonicParsing="false" onAction="#onSupprimer" text="Supprimer" />
+      													</children>
+      												</VBox>
+                              <VBox fx:id="vBoxMenuVaisseau" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label styleClass="editeur-label" text="Vitesse départ" />
+                                    <TextField fx:id="textFieldVitesseDepart" onAction="#onVitesseDepart" prefHeight="25.0" prefWidth="119.0" />
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox fx:id="vBoxMenuVaisseauNonJoueur" prefHeight="200.0" prefWidth="200.0" styleClass="editeur-menu-droite">
+                                             <children>
+                                                <Label styleClass="editeur-label" text="Orientation" />
+                                                <TextField fx:id="textFieldOrientation" onAction="#onOrientation" prefHeight="25.0" prefWidth="119.0" />
+                                                <Button fx:id="supprimer11" mnemonicParsing="false" onAction="#onSupprimer" text="Supprimer" />
+                                             </children>
+                                          </VBox>
+                  												<VBox fx:id="vBoxMenuVaisseauJoueur" prefWidth="200.0" styleClass="editeur-menu-droite" visible="false">
+                  													<children>
+                  														<Label styleClass="editeur-label" text="Carburant maximum" />
+                  														<TextField fx:id="textFieldCarburantMax" onAction="#onCarburantMax" prefHeight="25.0" prefWidth="119.0" />
+                  														<Label styleClass="editeur-label" text="Carburant de départ" />
+                  														<TextField fx:id="textFieldCarburantDepart" onAction="#onCarburantDepart" prefHeight="25.0" prefWidth="119.0" />
+                                                <Label styleClass="editeur-label" text="Puissance">
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                </Label>
+                                                <TextField fx:id="textFieldPuissance" onAction="#onPuissance" prefHeight="25.0" prefWidth="119.0" />
+                  													</children>
+                  												</VBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="editeur-menu-droite" />
+                                    <String fx:value="editeur-menu-droite" />
+                                 </styleClass>
+                              </VBox>
+      											</children>
+      										</Pane>
+      									</children>
+      								</VBox>
+								<VBox fx:id="vBoxMenuObjectif" alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0" styleClass="editeur-menu-droite" visible="false">
+									<children>
+										<Label styleClass="editeur-label" text="Rayon" />
+										<TextField fx:id="textFieldRayonObjectif" onAction="#onRayonObjectif" prefHeight="25.0" prefWidth="119.0" />
+									</children>
+								</VBox>
+							</children>
+						</Pane>
+					</children>
+				</VBox>
+	</right>
+	<top>
+		<ImageView fitHeight="61.0" fitWidth="1119.0" styleClass="#pane" BorderPane.alignment="CENTER">
+			<image>
+				<Image url="@titreEditeur.png" />
+			</image>
+		</ImageView>
+	</top>
+	<center>
+		<Pane fx:id="pane" onMouseClicked="#mouseClicked" onScroll="#zoom" prefHeight="727.0" prefWidth="1270.0" BorderPane.alignment="CENTER">
+			<styleClass>
+				<String fx:value="editeur-jeu" />
+				<String fx:value="jeu-root" />
+			</styleClass>
+		</Pane>
+	</center>
+</BorderPane>

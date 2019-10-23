@@ -1,0 +1,15 @@
+VaisseauJoueur ; 1.0 ; 16000.0 ; 20.0 ; 20.0
+Planete ; 6.0E15 ; -527.8364425456452 ; -19.194052456205554 ; 100.0 ; BLEUE ; 30.0 ; 0xffe680ff
+Planete ; 6.0E15 ; -1103.6580162318046 ; -23.99256557025683 ; 100.0 ; BLEUE ; 30.0 ; 0xe6e6e6ff
+Planete ; 9.0E15 ; -2005.7784816734534 ; -19.194052456205554 ; 300.0 ; JAUNE ; 30.0 ; 0xffff80ff
+Planete ; 1.1E16 ; -3243.794865098695 ; -4.79851311405173 ; 450.0 ; JAUNE ; 30.0 ; 0xffa500ff
+Planete ; 4.0E15 ; -4676.13034764254 ; 37.409042781140215 ; 30.0 ; ORANGE ; 30.0 ; 0x994d66ff
+Planete ; 4.0E15 ; -5551.501948721223 ; 29.927234224912354 ; 35.0 ; BLEUE ; 30.0 ; 0x4d8080ff
+Planete ; 5.0E15 ; -6516.655252474644 ; 44.89085133736853 ; 45.0 ; ORANGE ; 30.0 ; 0xffa500ff
+Planete ; 6.0E18 ; -12833.09088794177 ; -149.22198706908966 ; 4000.0 ; ROUGE ; 7000.0 ; 0xccffccff
+Planete ; 6.0E15 ; -7243.760894996696 ; 67.3574882034601 ; 40.0 ; MAGENTA ; 30.0 ; 0xff00eeff
+DescriptionNiveau ; Vous voici maintenant en direction vers la planète Terre. Ne ratez pas votre arrivée en orbite !
+ObjectifRayon ; -5706.2878490872245 ; 0.0 ; 50.0
+PointDepart ; 0.0 ; 0.0
+TitreNiveau ; The Milky Way
+VitesseDepart ; 100.0
