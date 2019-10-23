@@ -26,7 +26,12 @@
     <center>
       <img src="http://41.media.tumblr.com/7ce1823479d7176f04275039825b8b98/tumblr_n53t43XbJy1ttlc0qo1_500.png"/>
     <center>
-    <br/><br/><br/>
+    <br/>
+    <br/>
+    <center>
+      <audio autoplay loop controls src="/dive.mp3"></audio>
+    </center>
+    <br/><br/>
     <center>
       <font size="6"><font color="4afafc"><h1 style="background-color:#ff67f2">W E L C O M E &nbsp; &nbsp; T O &nbsp;&nbsp;  T H E &nbsp;&nbsp;  V A P O R W A V E</h1></font>
    </center>
