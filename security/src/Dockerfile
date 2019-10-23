@@ -8,7 +8,6 @@ WORKDIR /var/www/html
 COPY ./ ./
 
 RUN chmod 0644 *
-RUN chmod 0777 sandbox
 
 ENV PORT 5000
 RUN sed -i "s/80/$PORT/g" /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
