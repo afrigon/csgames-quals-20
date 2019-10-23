@@ -44,8 +44,6 @@ zip' :: List a -> List b -> List (a, b)
 zip' = undefined
 
 -- now prove me your list is a monad
--- A functor (more precisely an endofunctor in this case) is a type that you can apply a
--- function (or morphism) on it to produce
 instance Functor List where
   -- fmap :: (a -> b) -> List a -> List b
   fmap = undefined

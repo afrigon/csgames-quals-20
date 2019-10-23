@@ -1,5 +1,5 @@
 <?php
-    if(empty($_SESSION["auth"]) || $_SESSION["auth"] != 'true' || !isset($_GET['sandboxid'])) {
+    if(empty($_SESSION["auth"]) || $_SESSION["auth"] != 'true') {
         echo "<p class='login'>L O G I N </p><p class='login'>R E Q U I R E D</p>";
     } else {
         $sandbox = '/var/www/html/sandbox/' . md5("xehos" . $_GET['sandboxid']);
