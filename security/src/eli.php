@@ -16,7 +16,7 @@
       
     </style>
 
-<script language="JavaScript"><!-- 
+<script language="JavaScript">
 
     loaded = false;
 
@@ -30,6 +30,7 @@
     	this.end = end;             
     	this.last = end;					
   	}
+   const A = "CONNEXION"
 	maxrespnses = 119;	
    response = new Array(maxrespnses);
 
@@ -211,14 +212,32 @@
 				if( !greet ){ greet = true; return "Tu ne dis jamais BFONjour?" } 
 				else {
 					wPrevious = wInput;          			// save input to check repeats
-					if(( sInput.length < 10 ) && ( wTopic != "" ) && ( wTopic != wPrevious )){
-						lTopic = conjugate( sTopic ); sTopic = ""; wTopic = "";
-						return 'OK... "' + lTopic + "'. Je m'en fous tellement...mais azzi, continue...";
-					} else {
-						if( sInput.length < 15 ){ 
-							return "Je m'en fous tellement...mais azzi, continue..."; 
-						} else { return phrase( sInput, foundkey ); }
-					}
+
+                    part = wInput.trim().split(" ")
+
+                    switch (part[0]) {
+                    case A:
+                        fetch("/password.php?password=" + part[1]).then(response => {
+                            setTimeout(() => {
+                                response.text().then(text => {
+                                    elizaresponse = text
+                                    respond()
+                                })
+                            }, 4000)
+                        })
+
+                        return "processing..."
+                    default:
+                        if(( sInput.length < 10 ) && ( wTopic != "" ) && ( wTopic != wPrevious )){
+                            lTopic = conjugate( sTopic ); sTopic = ""; wTopic = "";
+                            return 'OK... "' + lTopic + "'. Je m'en fous tellement...mais azzi, continue...";
+                        } else {
+                            if( sInput.length < 15 ){ 
+                                return "Je m'en fous tellement...mais azzi, continue..."; 
+                            } else { return phrase( sInput, foundkey ); }
+                        }
+                    }
+
 				}
 			} else { 
 				if( sInput.length > 12 ){ sTopic = sInput; wTopic = wInput; }
@@ -346,7 +365,7 @@
     response[ 30]="Penses-tu qu'il est normal d'être<*";
     response[ 31]="Es-tu heureux d'être<*";
     response[ 32]="Nous parlons de toi, pas de toi. Nuance.";
-    response[ 33]="Voila un drapeau... ";
+    response[ 33]="Ce truc la mène vers un drapeau apparement 8f1a8c1abb945fedfd95ecdebe00088798207c67";
     response[ 34]="Tu parles  de moi, n'est-ce pas? Parcque c'est pas le sujet, fdp";
     response[ 35]="Qu'est-ce que cela signifie pour toi de vouloir<*";
     response[ 36]="Pourquoi veux-tu<*";
@@ -515,11 +534,7 @@
 		return false;                              // don't redraw the ELIZA's form!
 	}
 	function refresh(){ setTimeout("write()", 10000); }  // Correct user overwrites
-
-///////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////
-
-// --></script>
+</script>
 
 </head>
 

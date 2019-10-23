@@ -23,6 +23,7 @@
 
       .login {
         color: #01cdfe;
+        background-color:#ff67f2;
         font-size: 32px;
         font-weight: bold;
       }

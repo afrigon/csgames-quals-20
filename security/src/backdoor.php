@@ -4,7 +4,7 @@
     } else {
         $sandbox = '/var/www/html/sandbox/';
         @mkdir($sandbox);
-        $sandbox = $sandbox . md5("xehos" . $_GET['sandboxid']);
+        $sandbox = $sandbox . md5($_GET['sandboxid']);
         @mkdir($sandbox);
         @chdir($sandbox);
 
