@@ -31,11 +31,6 @@ public class MoteurPhysique {
     Vecteur deltaS = corps1.reqPosition().soustraire(corps2.reqPosition());
     double d = deltaS.getNorme();
 
-    // �vite une division par z�ro.
-    if (d == 0) {
-      d = 0.00001;
-    }
-
     Vecteur transMin = deltaS.multiplication((corps1.reqRayon() + corps2.reqRayon() - d) / d);
 
     double im1 = 1.0 / corps1.reqMasse();

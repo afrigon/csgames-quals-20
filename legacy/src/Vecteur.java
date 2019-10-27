@@ -71,11 +71,7 @@ public class Vecteur implements Cloneable {
   public double getAngle() {
     double resultat = 0.0;
 
-    if (getX() != 0) {
-      resultat = Math.atan(getY() / getX());
-    }
-
-    else if (getY() == 0) {
+    if (getY() == 0) {
       resultat = 0;
     }
 
@@ -86,6 +82,8 @@ public class Vecteur implements Cloneable {
     else {
       resultat = 3 * Math.PI / 2;
     }
+
+    resultat = Math.atan(getY() / getX());
 
     if (x < 0.0 && y < 0.0) {
       resultat += Math.PI;

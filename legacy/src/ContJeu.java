@@ -478,7 +478,11 @@ public class ContJeu implements Controleur {
    */
   private void verifierObjectif() {
     if (niveau != null && !objectifAtteint) {
-      if (niveau.reqObjectif() != null && niveau.reqObjectif().verifierObjectif()) {
+
+      if ((this.vaisseauJoueur.reqPosition()
+                              .soustraire(((ObjectifRayon) niveau.reqObjectif()).reqPosRayon())
+                              .getNorme() < ((ObjectifRayon) niveau.reqObjectif()).reqRayon()))
+      {
         objectifAtteint = true;
         afficherMenuVictoire();
       }

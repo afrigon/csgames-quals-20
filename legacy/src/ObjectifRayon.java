@@ -96,19 +96,6 @@ public class ObjectifRayon implements Objectif, Dessinable {
   }
 
   /**
-   * V�rifie si le vaisseau se retrouve dans le cercle prescrit.
-   */
-  public boolean verifierObjectif() {
-    boolean resultat = false;
-
-    if (vaisseau != null && vaisseau.reqPosition().soustraire(posRayon).getNorme() < rayon) {
-      resultat = true;
-    }
-
-    return resultat;
-  }
-
-  /**
    * Retourne un noeud repr�sentant le portail de fin.
    * 
    * @return Retourne le noeud.

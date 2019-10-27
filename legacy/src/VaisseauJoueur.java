@@ -198,8 +198,6 @@ public class VaisseauJoueur extends Vaisseau {
   public void asgCarburantRestant(double pCarburantRestant) {
     if (pCarburantRestant < 0)
       carburantRestant.set(0);
-    else if (pCarburantRestant > carburantMax.get())
-      carburantRestant.set(carburantMax.get());
     else {
       carburantRestant.set(pCarburantRestant);
     }
@@ -258,9 +256,8 @@ public class VaisseauJoueur extends Vaisseau {
    */
   public Vecteur reqForceExt() {
     Vecteur r = new Vecteur();
-    if (moteur && !(carburantRestant.get() <= 0)) {
+    if (moteur && !(carburantRestant.get() <= 0))
       r = direction.multiplication(puissance * PUISSANCE_MOTEUR);
-    }
     return r;
   }
 
@@ -315,12 +312,10 @@ public class VaisseauJoueur extends Vaisseau {
    * Met � jour le noeud repr�sentant le vaisseau
    */
   public void miseAJourGraphique(double dt) {
-    if (gauche ^ droite) {
-      if (gauche) {
-        direction.setAngle(direction.getAngle() - puissanceRotation / 360 * 2 * Math.PI);
-      } else if (droite) {
-        direction.setAngle(direction.getAngle() + puissanceRotation / 360 * 2 * Math.PI);
-      }
+    if (gauche) {
+      direction.setAngle(direction.getAngle() - puissanceRotation / 360 * 2 * Math.PI);
+    } else if (droite) {
+      direction.setAngle(direction.getAngle() + puissanceRotation / 360 * 2 * Math.PI);
     }
 
     if (reqForceExt().getNorme() > 0) {

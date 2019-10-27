@@ -13,13 +13,6 @@ public interface Objectif {
   String reqDescription();
 
   /**
-   * V�rifie si l'objectif a �t� atteint.
-   * 
-   * @return Vrai si l'objectif est atteint, faux sinon.
-   */
-  boolean verifierObjectif();
-
-  /**
    * Assigne un vaisseau � l'objectif.
    * 
    * @param v Vaisseau.
