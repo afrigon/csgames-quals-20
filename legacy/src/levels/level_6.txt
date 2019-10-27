@@ -1,0 +1,12 @@
+VaisseauJoueur ; 1.0 ; 3000.0 ; 3.0 ; 3.0
+Vaisseau ; 6.0E15 ; -558.0 ; -315.0 ; 0.0 ; 0.0
+Vaisseau ; 6.0E15 ; -581.0 ; -1.0 ; 0.0 ; 0.0
+Planete ; 2.0E16 ; 402.0 ; -292.0 ; 240.0 ; ROUGE ; 30.0 ; 0xffa500ff
+Planete ; 6.0E15 ; 481.0666334961297 ; 476.1577902971899 ; 240.0 ; VERTE ; 30.0 ; 0xffa500ff
+Planete ; 3000.0 ; 1314.726313666437 ; -789.6964928241939 ; 160.0 ; BLEUE ; 30.0 ; 0xffa500ff
+Planete ; 6.0E15 ; 186.85213051468054 ; -1005.5594918487407 ; 100.0 ; JAUNE ; 30.0 ; 0xffa500ff
+DescriptionNiveau ; Dans ce niveau, faites attention à votre barre de vie. Si trop de vaisseaux vous touchent, vous mourrez.
+ObjectifRayon ; 538.42916556204 ; -558.0978108793744 ; 50.0
+PointDepart ; 0.0 ; 0.0
+TitreNiveau ; L'entre-deux
+VitesseDepart ; 60.0

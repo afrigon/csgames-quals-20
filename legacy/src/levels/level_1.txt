@@ -1,0 +1,15 @@
+VaisseauJoueur ; 1.0 ; 6000.0 ; 4.0 ; 4.0
+Vaisseau ; 1000.0 ; -867.0 ; -339.0 ; 0.0 ; 0.0
+Vaisseau ; 1000.0 ; -875.0 ; -164.0 ; 0.0 ; 0.0
+Vaisseau ; 1000.0 ; -886.0 ; 1.0 ; 0.0 ; 0.0
+Vaisseau ; 1000.0 ; -891.0 ; 166.0 ; 0.0 ; 0.0
+Vaisseau ; 1000.0 ; -898.0 ; 347.0 ; 0.0 ; 0.0
+Planete ; 6.0E15 ; -224.0 ; -351.0 ; 50.0 ; BLEUE ; 30.0 ; 0xcce6ffff
+Planete ; 6.0E15 ; 72.0 ; 271.0 ; 80.0 ; ORANGE ; 30.0 ; 0x99a500ff
+Planete ; 6.0E15 ; 438.0 ; 179.0 ; 120.0 ; ROUGE ; 30.0 ; 0xffa500ff
+Planete ; 6.0E15 ; 388.0 ; -309.0 ; 156.0 ; VERTE ; 200.0 ; 0x99a500ff
+DescriptionNiveau ; Les envahisseurs s'en viennent vous chercher ! Rejoignez le portail pour vous en échapper. Vous ne disposez pas de beaucoup de temps !
+ObjectifRayon ; -496.0 ; -53.0 ; 50.0
+PointDepart ; 800.0 ; 0.0
+TitreNiveau ; Quick Escape
+VitesseDepart ; 30.0

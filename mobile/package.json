@@ -1,0 +1,15 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "description": "CSGames Qualifiers 2020 - Mobile",
+  "main": "server.js",
+  "scripts": {
+    "build": "python3 generator.py",
+    "start": "node server.js"
+  },
+  "author": "Alexandre Frigon",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

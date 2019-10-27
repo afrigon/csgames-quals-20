@@ -1,18 +1,21 @@
 #!/usr/bin/env python2
-from random import randrange
+from random import randrange, choice
 from pwn import xor
+import string
 
-f = open("./flag")
-flag = f.read()[:-1]
+a_len = 24
+key_len = 5
 
-key = [ randrange(0xff) for _ in range(len(flag)) ]
-key = map(chr, key)
+a = [ randrange(0xff) for _ in range(a_len) ]
+a = map(chr, a)
+a = "".join(a)
 
+key = [ choice(string.ascii_lowercase) for _ in range(key_len) ]
 key = "".join(key)
 
-m = xor(flag, key)
+b = xor(a, key)
 
-print("char m[] = { " + ", ".join(map(hex, map(ord, list(m)))) + " };")
-print("char key[{}];".format(len(m)))
-print("read(0, key, {});".format(len(m)))
+print("char a[] = { " + ", ".join(map(hex, map(ord, list(a)))) + ", 0 };")
+print("char b[] = { " + ", ".join(map(hex, map(ord, list(b)))) + ", 0 };")
+print("// key = " + key)
 

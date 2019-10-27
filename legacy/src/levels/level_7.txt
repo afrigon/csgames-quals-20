@@ -1,0 +1,9 @@
+VaisseauJoueur ; 1.0 ; 3000.0 ; 2.0 ; 2.0
+Planete ; 6.0E15 ; 172.0 ; -255.0 ; 240.0 ; ROUGE ; 30.0 ; 0xffa500ff
+Planete ; 6.0E15 ; -1996.8360780141131 ; -1157.855338259346 ; 200.0 ; JAUNE ; 30.0 ; 0xffa500ff
+Planete ; 7.0E16 ; -2074.232825223961 ; 312.6828587277912 ; 150.0 ; BLEUE ; 30.0 ; 0xffa500ff
+DescriptionNiveau ; Dirigez-vous vers une planète et utilisez sa force gravitationelle pour vous diriger vers le portail ! Bonne chance !
+ObjectifRayon ; -2299.3284704980324 ; 394.3362824561568 ; 50.0
+PointDepart ; 0.0 ; 0.0
+TitreNiveau ; Le laisser-aller
+VitesseDepart ; 70.0

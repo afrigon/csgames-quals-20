@@ -5,6 +5,7 @@ services:
         build:
             context: ./sorting
         container_name: coding-sorting
+        restart: always
         ports:
             - 8100:8100
               
@@ -12,6 +13,7 @@ services:
         build:
             context: ./palindrome
         container_name: coding-palindrome
+        restart: always
         ports:
             - 8101:8101
 
@@ -19,6 +21,7 @@ services:
         build:
             context: ./ascii
         container_name: coding-ascii
+        restart: always
         ports:
             - 8102:8102
 

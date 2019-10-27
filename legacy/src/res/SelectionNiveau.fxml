@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="893.0" prefWidth="1277.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="CENTER" styleClass="niveau-vbox" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="800.0" styleClass="niveau-label-description" text="Choisir un niveau..." textAlignment="CENTER" textFill="#00ff1e" wrapText="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Angsana New" size="1.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="35.0" left="35.0" right="35.0" top="35.0" />
+               </padding>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#play" prefHeight="71.0" prefWidth="175.0" text="Jouer">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#007217" />
+                        <Stop color="#ffaa00" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#autreNiveau" prefHeight="71.0" prefWidth="175.0" text="Autre niveau">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#007217" />
+                        <Stop color="#ffaa00" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#retour" prefHeight="71.0" prefWidth="172.0" text="Retour" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#007217" />
+                        <Stop color="#ffaa00" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="niveau-hbox">
+               <children>
+                  <Button fx:id="b1" mnemonicParsing="false" onAction="#levels" styleClass="niveau-button-niveau" text="1">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#007217" />
+                              <Stop color="#ffaa00" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="b2" mnemonicParsing="false" onAction="#levels" styleClass="niveau-button-niveau" text="2">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#007217" />
+                              <Stop color="#ff9900" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="b3" mnemonicParsing="false" onAction="#levels" styleClass="niveau-button-niveau" text="3">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#007217" />
+                              <Stop color="#ff9900" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="b4" mnemonicParsing="false" onAction="#levels" prefHeight="46.0" prefWidth="49.0" styleClass="niveau-button-niveau" text="4">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#007217" />
+                              <Stop color="#ff9900" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="b5" mnemonicParsing="false" onAction="#levels" styleClass="niveau-button-niveau" text="5">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#007217" />
+                              <Stop color="#ff9900" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="b6" mnemonicParsing="false" onAction="#levels" styleClass="niveau-button-niveau" text="6">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#007217" />
+                              <Stop color="#ff9900" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="b7" mnemonicParsing="false" onAction="#levels" styleClass="niveau-button-niveau" text="7">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#007217" />
+                              <Stop color="#ff9900" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="b8" mnemonicParsing="false" onAction="#levels" styleClass="niveau-button-niveau" text="8">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#007217" />
+                              <Stop color="#ff9900" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="b9" mnemonicParsing="false" onAction="#levels" styleClass="niveau-button-niveau" text="9">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#007217" />
+                              <Stop color="#ff9900" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="b10" mnemonicParsing="false" onAction="#levels" prefHeight="46.0" prefWidth="60.0" styleClass="niveau-button-niveau" text="10">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#007217" />
+                              <Stop color="#ff9900" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="45.0" top="34.0" />
+         </padding>
+      </VBox>
+   </center>
+   <styleClass>
+      <String fx:value="root" />
+      <String fx:value="niveau-root" />
+   </styleClass>
+</BorderPane>
