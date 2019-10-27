@@ -198,8 +198,6 @@ public class VaisseauJoueur extends Vaisseau {
   public void asgCarburantRestant(double pCarburantRestant) {
     if (pCarburantRestant < 0)
       carburantRestant.set(0);
-    else if (pCarburantRestant > carburantMax.get())
-      carburantRestant.set(carburantMax.get());
     else {
       carburantRestant.set(pCarburantRestant);
     }

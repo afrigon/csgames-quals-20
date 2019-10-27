@@ -69,15 +69,4 @@ public class ObjectifRayonTest {
     obj.asgVaisseau(null);
     assertNotEquals(null == obj.reqVaisseau(), true);
   }
-
-  @Test
-  public void testVerifierObjectif() {
-    assertEquals(false, obj.verifierObjectif());
-
-    vaisseau.asgPosition(new Vecteur(100, 100));
-    assertEquals(true, obj.verifierObjectif());
-
-    vaisseau.asgPosition(new Vecteur(95, 95));
-    assertEquals(true, obj.verifierObjectif());
-  }
 }
