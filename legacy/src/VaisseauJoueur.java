@@ -256,7 +256,7 @@ public class VaisseauJoueur extends Vaisseau {
    */
   public Vecteur reqForceExt() {
     Vecteur r = new Vecteur();
-    if (moteur && !(carburantRestant.get() <= 0)) {
+    if (moteur) {
       r = direction.multiplication(puissance * PUISSANCE_MOTEUR);
     }
     return r;
@@ -313,12 +313,10 @@ public class VaisseauJoueur extends Vaisseau {
    * Met � jour le noeud repr�sentant le vaisseau
    */
   public void miseAJourGraphique(double dt) {
-    if (gauche ^ droite) {
-      if (gauche) {
-        direction.setAngle(direction.getAngle() - puissanceRotation / 360 * 2 * Math.PI);
-      } else if (droite) {
-        direction.setAngle(direction.getAngle() + puissanceRotation / 360 * 2 * Math.PI);
-      }
+    if (gauche) {
+      direction.setAngle(direction.getAngle() - puissanceRotation / 360 * 2 * Math.PI);
+    } else if (droite) {
+      direction.setAngle(direction.getAngle() + puissanceRotation / 360 * 2 * Math.PI);
     }
 
     if (reqForceExt().getNorme() > 0) {
