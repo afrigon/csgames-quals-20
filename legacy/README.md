@@ -49,6 +49,7 @@ Soyez prudent, les êtres supérieurs qui ont construit le monde autour de vous 
 
 
 ## Petits trucs à prendre en compte
+- Évidement, si vous trouvez des bugs, corrigez-les!
 - Ne passez pas trop de temps à faire du ménage. Le but n'est pas de cleaner tout le code, c'est d'ajouter des features.
 - Les tests actuels sont d'une qualitée assez douteuse... Si vous décidez d'en ajouter, assurez-vous qu'ils soient bien fait !
 - Si vous avez à ajouter de la logique, le TDD et les tests de caractérisation peuvent être un allié de choix.
