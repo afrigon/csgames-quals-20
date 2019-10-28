@@ -8,8 +8,8 @@ Here's what you'll need to do:
 
 - Create a linux vm. You'll need docker and minikube on this vm. 1 way to do this is
 to create a vagrantfile. You can read the docs here: 
-	- https://www.vagrantup.com/docs/index.html
-  - https://kubernetes.io/docs/home/
+    - https://www.vagrantup.com/docs/index.html
+    - https://kubernetes.io/docs/home/
 	- https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 - Write a Dockerfile for this app: https://github.com/zulip/zulip
