@@ -18,6 +18,8 @@ Please provide your entire project with everything required to compile it. Inclu
 
 ### API Specification
 
+`http://csgames-quals.frigon.app:9000`
+
 #### List Dogs
 
 `GET /doggo`
