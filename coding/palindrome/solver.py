@@ -32,11 +32,16 @@ def solve(question):
 
     return len(s) == 0 or len(s) == 1
 
+def alternate_solve(question):
+    s = reduce(lambda acc, c: acc ^ 1 << (ord(c) - ord("a")), question, 0)
+
+    return s == 0 or s & (s - 1) == 0
+
 while True:
     question = p.recvline(keepends=False)
     printOrExit(question)
 
-    answer = solve(question)
+    answer = alternate_solve(question)
 
     p.sendline(str(answer))
     p.recvline()
